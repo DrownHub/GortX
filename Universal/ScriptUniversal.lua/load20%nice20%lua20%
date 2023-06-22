@@ -63,3 +63,34 @@ game:GetService("Players").LocalPlayer.PlayerGui.RTGui.codebase.ragdoll.Events.T
 end
    end,
 })
+
+local Toggle = MainTab:CreateToggle({
+   Name = "Auto Escaped From Titan",
+   CurrentValue = false,
+   Flag = "Toggle1", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+   
+   end,
+})
+
+local Button = MainTab:CreateButton({
+   Name = "More Toggle Coming Soon",
+   Callback = function()
+   -- The function that takes place when the button is pressed
+   end,
+})
+
+local PlayerTab = Window:CreateTab("Player", nil) -- Title, Image
+local PlayerSection = PlayerTab:CreateSection("Player")
+
+local Slider = PlayerTab:CreateSlider({
+   Name = "WalkSpeed Slider",
+   Range = {16, 350},
+   Increment = 1,
+   Suffix = "Speed",
+   CurrentValue = 16,
+   Flag = "sliderws", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Value)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = (Value)
+   end,
+})
