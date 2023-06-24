@@ -63,8 +63,7 @@ PlayerSection:NewTextBox("WalkSpeed", "SPEED!!", function(txt)
 end)
 
 PlayerSection:NewButton("Reset WalkSpeed", "reset walkspeed", function()
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
-    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 195
 end)
 
 PlayerSection:NewToggle("Super Human", "Super Human", function(state)
