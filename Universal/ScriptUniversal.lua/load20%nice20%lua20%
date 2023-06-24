@@ -1,12 +1,258 @@
---[[
- .____                  ________ ___.    _____                           __                
- |    |    __ _______   \_____  \\_ |___/ ____\_ __  ______ ____ _____ _/  |_  ___________ 
- |    |   |  |  \__  \   /   |   \| __ \   __\  |  \/  ___// ___\\__  \\   __\/  _ \_  __ \
- |    |___|  |  // __ \_/    |    \ \_\ \  | |  |  /\___ \\  \___ / __ \|  | (  <_> )  | \/
- |_______ \____/(____  /\_______  /___  /__| |____//____  >\___  >____  /__|  \____/|__|   
-         \/          \/         \/    \/                \/     \/     \/                   
-          \_Welcome to LuaObfuscator.com   (Alpha 0.2.8) ~  Much Love, Ferib 
+if game.PlaceId == 3404168302 then
 
-]]--
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Drown Hub", "BloodTheme")
 
-local v0=string.char;local v1=string.byte;local v2=string.sub;local v3=bit32 or bit ;local v4=v3.bxor;local v5=table.concat;local v6=table.insert;local function v7(v8,v9)local v10={};for v11=1, #v8 do v6(v10,v0(v4(v1(v2(v8,v11,v11 + 1 )),v1(v2(v9,1 + ((v11-1)% #v9) ,1 + ((v11-1)% #v9) + 1 )))%256 ));end return v5(v10);end if (game.PlaceId==(3404169806 -(363 + 1141))) then local v12=0;local v13;local v14;local v15;local v16;local v17;local v18;local v19;local v20;local v21;local v22;local v23;local v24;local v25;local v26;while true do if (v12==(1585 -(1183 + 397))) then v22:NewLabel(v7("\76\191\245\197\205\54\194\242\74\187\225\213\203\52\201","\30\222\146\161\162\90\174\210"));v22:NewLabel(v7("\62\234\89\117\24\165\104\92","\106\133\46\16"));v23=v14:NewTab(v7("\115\93\52\103\245\84\71","\32\56\64\19\156\58"));v24=v23:NewSection(v7("\179\95\220\241\95\84\245\147","\224\58\168\133\54\58\146"));v12=18 -12 ;end if (v12==2) then local v42=0;while true do if (v42==0) then v18=v17:NewSection(v7("\184\37\192\53\141\59","\232\73\161\76"));v18:NewSlider(v7("\41\186\213\73\110\14\190\220\70","\126\219\185\34\61"),v7("\212\60\235\123\86\63\54","\135\108\174\62\18\30\23\147"),367 + 133 ,12 + 4 ,function(v65)v21.Players.LocalPlayer.Character.Humanoid.WalkSpeed=v65;end);v42=1976 -(1913 + 62) ;end if (v42==(2 + 0)) then v12=7 -4 ;break;end if (v42==(1934 -(565 + 1368))) then v18:NewTextBox(v7("\240\183\229\33\248\8\171\54\195","\167\214\137\74\171\120\206\83"),v7("\148\187\213\23\121\185\230","\199\235\144\82\61\152"),function(v67)v21.Players.LocalPlayer.Character.Humanoid.WalkSpeed=v67;end);v18:NewButton(v7("\25\2\5\188\63\71\33\184\39\12\37\169\46\2\18","\75\103\118\217"),v7("\12\194\71\117\0\249\9\198\88\123\7\169\27\194\80","\126\167\52\16\116\217"),function()local v69=0 -0 ;local v70;local v71;while true do if (v69==(1662 -(1477 + 184))) then while true do if (v70==(0 -0)) then v71=0 + 0 ;while true do if (v71==(856 -(564 + 292))) then v21.Players.LocalPlayer.Character.Humanoid.WalkSpeed=26 -10 ;v21.Players.LocalPlayer.Character.Humanoid.JumpPower=150 -100 ;break;end end break;end end break;end if (v69==(304 -(244 + 60))) then v70=0 + 0 ;v71=nil;v69=477 -(41 + 435) ;end end end);v42=2;end end end if (v12==(1007 -(938 + 63))) then v24:NewKeybind(v7("\32\92\79\73\244\123\130","\107\57\54\43\157\21\230\231"),v7("\228\222\146\19\252\183\216","\175\187\235\113\149\217\188"),Enum.KeyCode.F,function()v13:ToggleUI(F);end);v25=v14:NewTab(v7("\74\57\191\142\94\247","\24\92\207\225\44\131\25"));v26=v25:NewSection(v7("\79\78\195\183\94\15","\29\43\179\216\44\123"));v26:NewLabel(v7("\100\188\207\37\12\156\153\16\94\178\219\44\73\176\134\3\67\179\205\33\79\169\153\34\69\180\208\34\15\234\143\121\28\253\240\46\12\153\208\51\79\178\203\36","\44\221\185\64"));break;end if (v12==4) then v20=v19:NewSection(v7("\230\162\175\30\86\187\234\219\165\166\31","\175\204\201\113\36\214\139"));v20:NewLabel(v7("\48\79\197\38\156\55\68\222\60\204\16\7\229\38\156\38\66\216\52","\100\39\172\85\188"));v21=v14:NewTab(v7("\20\172\117\188\192\0\184\104\169\143\33\185","\83\205\24\217\224"));v22=v21:NewSection(v7("\17\239\214\217\125\193\196\192\56\166\246\216\45\246\202\223\41","\93\134\165\173"));v12=4 + 1 ;end if (v12==0) then v13=loadstring(v21:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))();v14=v13.CreateLib(v7("\58\195\204\204\43\166\147\210\28","\126\177\163\187\69\134\219\167"),v7("\222\47\194\37\193\200\43\200\39\192","\156\67\173\74\165"));v15=v14:NewTab(v7("\107\53\190\71","\38\84\215\41\118\220\70"));v16=v15:NewSection(v7("\211\81\31\44","\158\48\118\66\114"));v12=1;end if (v12==(1126 -(936 + 189))) then local v43=0 + 0 ;local v44;while true do if (v43==(1613 -(1565 + 48))) then v44=0 + 0 ;while true do if (v44==(1138 -(782 + 356))) then v16:NewToggle(v7("\218\190\48\31\118\64\177\250\165\32\80\3\99","\155\203\68\112\86\19\197"),v7("\217\83\201\57\188\115\108\228\246\66\157\3\236","\152\38\189\86\156\32\24\133"),function(v74)if v74 then _G.AutoStand=true;while _G.AutoStand==true  do local v92=0;local v93;while true do if (v92==(267 -(176 + 91))) then local v104=0 -0 ;while true do if (v104==(0 -0)) then v93={[1093 -(975 + 117) ]="R",[1877 -(157 + 1718) ]=false};v21:GetService(v7("\118\240\86\190\67\238\68","\38\156\55\199")).LocalPlayer.PlayerGui.RTGui.codebase.ragdoll.Events.Toggle:FireServer(unpack(v93));v104=1 + 0 ;end if (v104==(3 -2)) then v92=3 -2 ;break;end end end if (v92==(1019 -(697 + 321))) then wait(0.1);break;end end end else _G.AutoStand=false;while _G.AutoStand==true  do local v94=0 -0 ;local v95;while true do if ((1 -0)==v94) then wait(0.1 -0 );break;end if ((0 + 0)==v94) then v95={[1 -0 ]="R",[5 -3 ]=false};v21:GetService(v7("\115\164\124\101\45\1\103","\35\200\29\28\72\115\20\154")).LocalPlayer.PlayerGui.RTGui.codebase.ragdoll.Events.Toggle:FireServer(unpack(v95));v94=1228 -(322 + 905) ;end end end end end);v16:NewToggle(v7("\21\12\171\222\159\168\63\55\24\175\212\219\205\10\38\22\178\145\235\132\56\53\23\247\249\222\155\41\116\58\176\222\211\137\35\35\23\246","\84\121\223\177\191\237\76"),v7("\224\174\66\198\224\31\67\51\192\171\83\205\224\28\66\63\204\251\98\192\180\59\94","\161\219\54\169\192\90\48\80"),function(v75)if v75 then local v89=611 -(602 + 9) ;local v90;while true do if (v89==(1189 -(449 + 740))) then v90=872 -(826 + 46) ;while true do if (0==v90) then _G.AutoEscaped=true;while _G.AutoEscaped==true  do local v109=0;while true do if ((947 -(245 + 702))==v109) then v21:GetService(v7("\21\69\67\25\32\91\81","\69\41\34\96")).LocalPlayer.PlayerGui.RTGui.codebase.avatar.dropplrev:FireServer();wait();break;end end end break;end end break;end end else _G.AutoEscaped=false;while _G.AutoEscaped==true  do local v96=0;while true do if ((0 -0)==v96) then v21:GetService(v7("\27\176\194\206\15\16\56","\75\220\163\183\106\98")).LocalPlayer.PlayerGui.RTGui.codebase.avatar.dropplrev:FireServer();wait();break;end end end end end);v44=1;end if ((1 + 1)==v44) then v12=1900 -(260 + 1638) ;break;end if (v44==(441 -(382 + 58))) then v16:NewLabel(v7("\244\13\168\142\119\234\1\168\130\39\205\66\153\132\58\208\12\189\203\4\214\13\180","\185\98\218\235\87"));v17=v14:NewTab(v7("\154\199\61\62\227\204","\202\171\92\71\134\190"));v44=6 -4 ;end end break;end end end if (v12==(3 + 0)) then v18:NewToggle(v7("\207\221\62\37\146\244\49\233\197\47\46","\156\168\78\64\224\212\121"),v7("\253\18\254\160\220\71\198\176\195\6\224","\174\103\142\197"),function(v50)if v50 then v21.Players.LocalPlayer.Character.Humanoid.WalkSpeed=661 -341 ;else v21.Players.LocalPlayer.Character.Humanoid.WalkSpeed=195;end end);v18:NewToggle(v7("\209\88\46\86\54\44\74\253\22\2\74\53\53","\152\54\72\63\88\69\62"),v7("\117\218\194\231\82\221\208\235\28\254\209\227\76","\60\180\164\142"),function(v51)if v51 then local v60=0;while true do if (v60==(0 -0)) then _G.infinjump= not _G.infinjump;if (_G.infinJumpStarted==nil) then local v80=1205 -(902 + 303) ;local v81;local v82;local v83;while true do if (0==v80) then v81=0 -0 ;v82=nil;v80=2 -1 ;end if (v80==(1 + 0)) then v83=nil;while true do if (v81==0) then _G.infinJumpStarted=true;v82=v21:GetService(v7("\34\84\95\28\44\53\254","\114\56\62\101\73\71\141")).LocalPlayer;v81=1691 -(1121 + 569) ;end if (v81==(215 -(22 + 192))) then v83=v82:GetMouse();v83.KeyDown:connect(function(v107)if _G.infinjump then if (v107:byte()==(715 -(483 + 200))) then humanoid=v21:GetService(v7("\244\180\232\194\193\170\250","\164\216\137\187")).LocalPlayer.Character:FindFirstChildOfClass(v7("\35\199\235\48\188\169\247\15","\107\178\134\81\210\198\158"));humanoid:ChangeState(v7("\128\45\3\146\207\164\63","\202\88\110\226\166"));wait();humanoid:ChangeState(v7("\249\198\14\150\242\206","\170\163\111\226\151"));end end end);break;end end break;end end end break;end end else local v61=0;while true do if ((1463 -(1404 + 59))==v61) then _G.infinjump= not _G.infinjump;if (_G.infinJumpStarted==nil) then local v84=0 -0 ;local v85;local v86;while true do if (v84==(1 -0)) then v86=v85:GetMouse();v86.KeyDown:connect(function(v101)if _G.infinjump then if (v101:byte()==(797 -(468 + 297))) then local v110=562 -(334 + 228) ;while true do if (v110==(0 -0)) then humanoid=v21:GetService(v7("\215\141\45\212\23\245\146","\135\225\76\173\114")).LocalPlayer.Character:FindFirstChildOfClass(v7("\143\15\224\185\190\163\180\163","\199\122\141\216\208\204\221"));humanoid:ChangeState(v7("\220\184\208\0\249\118\241","\150\205\189\112\144\24"));v110=2 -1 ;end if ((1 -0)==v110) then wait();humanoid:ChangeState(v7("\35\32\133\171\73\0","\112\69\228\223\44\100\232\113"));break;end end end end end);break;end if (v84==(0 + 0)) then _G.infinJumpStarted=false;v85=v21:GetService(v7("\25\29\49\171\61\92\36","\73\113\80\210\88\46\87")).LocalPlayer;v84=237 -(141 + 95) ;end end end break;end end end end);v18:NewLabel(v7("\172\193\18\23\227\185\107\131\198\95\47\210\165\60\182\213\11\4\219\179\120","\230\180\127\103\179\214\28"));v19=v14:NewTab(v7("\201\130\3\80\84\233\64\244\133\10\81","\128\236\101\63\38\132\33"));v12=4;end end end if (game.PlaceId==(5496457105 -(1515 + 282))) then local v27=0;local v28;local v29;local v30;local v31;local v32;local v33;local v34;local v35;local v36;local v37;local v38;local v39;local v40;local v41;while true do if (v27==(732 -(726 + 3))) then v31:NewToggle(v7("\114\189\46\6\242\217\79\182\104\37\233\221\75","\59\211\72\111\156\176"),v7("\4\64\129\234\35\71\147\230\109\100\146\238\61","\77\46\231\131"),function(v52)if v52 then local v62=0 + 0 ;while true do if (v62==(0 + 0)) then _G.infinjump= not _G.infinjump;if (_G.infinJumpStarted==nil) then _G.infinJumpStarted=true;local v87=v36:GetService(v7("\112\182\85\175\69\168\71","\32\218\52\214")).LocalPlayer;local v88=v87:GetMouse();v88.KeyDown:connect(function(v91)if _G.infinjump then if (v91:byte()==(94 -62)) then humanoid=v36:GetService(v7("\106\66\22\40\173\227\163","\58\46\119\81\200\145\208\37")).LocalPlayer.Character:FindFirstChildOfClass(v7("\30\62\129\49\162\166\180\50","\86\75\236\80\204\201\221"));humanoid:ChangeState(v7("\161\103\76\103\140\240\140","\235\18\33\23\229\158"));wait();humanoid:ChangeState(v7("\136\85\187\213\190\84","\219\48\218\161"));end end end);end break;end end else local v63=0;local v64;while true do if (v63==0) then v64=0;while true do if (v64==0) then _G.infinjump= not _G.infinjump;if (_G.infinJumpStarted==nil) then local v98=0 -0 ;local v99;local v100;while true do if (v98==1) then v100=v99:GetMouse();v100.KeyDown:connect(function(v108)if _G.infinjump then if (v108:byte()==(2 + 30)) then humanoid=v36:GetService(v7("\109\13\51\31\63\79\18","\61\97\82\102\90")).LocalPlayer.Character:FindFirstChildOfClass(v7("\33\185\35\170\69\200\94\26","\105\204\78\203\43\167\55\126"));humanoid:ChangeState(v7("\123\176\167\51\23\29\3","\49\197\202\67\126\115\100\167"));wait();humanoid:ChangeState(v7("\109\50\90\203\44\132","\62\87\59\191\73\224\54"));end end end);break;end if (v98==0) then local v106=0 + 0 ;while true do if (v106==(1053 -(433 + 619))) then v98=1;break;end if (v106==(163 -(92 + 71))) then _G.infinJumpStarted=false;v99=v36:GetService(v7("\208\232\112\101\76\201\92","\128\132\17\28\41\187\47")).LocalPlayer;v106=1 + 0 ;end end end end end break;end end break;end end end end);v32=v29:NewTab(v7("\230\243\10\255\219","\169\135\98\154"));v33=v32:NewSection(v7("\231\223\127\33\70\238","\168\171\23\68\52\157\83"));v27=4;end if (v27==(11 -4)) then local v45=0;while true do if (v45==(766 -(574 + 191))) then v40=v29:NewTab(v7("\232\48\164\132\224\206","\186\85\212\235\146"));v27=8;break;end if (v45==0) then v39=v38:NewSection(v7("\29\237\25\77\247\213\229\145","\78\136\109\57\158\187\130\226"));v39:NewKeybind(v7("\218\59\38\251\248\48\59","\145\94\95\153"),v7("\156\248\212\22\220\64\179","\215\157\173\116\181\46"),Enum.KeyCode.F,function()v28:ToggleUI(F);end);v45=1;end end end if (v27==(5 + 0)) then local v46=0 -0 ;while true do if (v46==0) then v35:NewLabel(v7("\111\34\39\198\27\25\45\199\82\58\58\149\114\57\110\247\94\62\47","\59\74\78\181"));v36=v29:NewTab(v7("\148\36\220\95\26\128\48\193\74\85\161\49","\211\69\177\58\58"));v46=1 + 0 ;end if (v46==1) then v37=v36:NewSection(v7("\231\190\246\109\181\206\202\186\224\57\198\252\219\167\234\107\225","\171\215\133\25\149\137"));v27=855 -(254 + 595) ;break;end end end if (v27==6) then v37:NewLabel(v7("\112\224\207\54\245\227\60\188\118\228\219\38\243\225\55","\34\129\168\82\154\143\80\156"));v37:NewLabel(v7("\189\138\165\54\25\8\104\165","\233\229\210\83\107\40\46"));v38=v29:NewTab(v7("\54\196\86\38\223\11\198","\101\161\34\82\182"));v27=133 -(55 + 71) ;end if (v27==(10 -2)) then v41=v40:NewSection(v7("\106\199\145\25\236\45","\56\162\225\118\158\89\142"));v41:NewLabel(v7("\240\93\19\197\239\3\152\108\23\207\173\46\221\81\90\227\160\44\204\93\6\212\239\32\209\85\12\194\236\117\142\5\85\128\134\44\152\120\12\211\172\45\202\88","\184\60\101\160\207\66"));break;end if (v27==(1791 -(573 + 1217))) then local v47=0 -0 ;local v48;while true do if (v47==0) then v48=0 + 0 ;while true do if (v48==(1 -0)) then v31:NewSlider(v7("\31\41\60\25\139\22\252\36\39","\85\92\81\105\219\121\139\65"),v7("\245\200\158\96\5\84\246\218\155\17\4","\191\157\211\48\37\28"),500,989 -(714 + 225) ,function(v76)v36.Players.LocalPlayer.Character.Humanoid.JumpPower=v76;end);v27=2;break;end if (v48==0) then v31=v30:NewSection(v7("\194\185\43\112","\143\216\66\30\126\68\155"));v31:NewSlider(v7("\214\171\196\6\248\213\166\210\229","\129\202\168\109\171\165\195\183"),v7("\213\18\125\18\252\159\85","\134\66\56\87\184\190\116"),1461 -961 ,21 -5 ,function(v78)v36.Players.LocalPlayer.Character.Humanoid.WalkSpeed=v78;end);v48=1 + 0 ;end end break;end end end if (v27==4) then local v49=0 -0 ;while true do if (v49==1) then v35=v34:NewSection(v7("\83\130\251\67\32\31\77\110\133\242\66","\26\236\157\44\82\114\44"));v27=811 -(118 + 688) ;break;end if (v49==(48 -(25 + 23))) then v33:NewButton(v7("\174\250\119\252\163\44\57\130\180\72\252\168\41\41\207\209\112\230\180\101\26\142\250\56","\231\148\17\149\205\69\77"),v7("\214\142\161\206\245\94\235\133\231\254\242\82\243\132","\159\224\199\167\155\55"),function()loadstring(v36:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))();end);v34=v29:NewTab(v7("\251\249\245\51\192\250\242\40\219\248\253","\178\151\147\92"));v49=1 + 0 ;end end end if (v27==(1888 -(927 + 959))) then v31:NewTextBox(v7("\13\222\19\255\47\42\218\26\240","\90\191\127\148\124"),v7("\36\72\162\11\51\57\198","\119\24\231\78"),function(v53)v36.Players.LocalPlayer.Character.Humanoid.WalkSpeed=v53;end);v31:NewTextBox(v7("\59\151\32\181\122\211\87\20\144","\113\226\77\197\42\188\32"),v7("\159\15\59\196\245\18\63\211\157\123\87","\213\90\118\148"),function(v55)v36.Players.LocalPlayer.Character.Humanoid.JumpPower=v55;end);v31:NewButton(v7("\127\94\61\177\66\13\108\47\184\93\126\75\43\177\82\13\90\32\176\22\103\78\35\164\102\66\76\43\166","\45\59\78\212\54"),v7("\226\21\69\134\159\198\57\172\252\27\69\147\142\131\42\237\241\30\82\195\129\147\35\189\224\31\65\134\153","\144\112\54\227\235\230\78\205"),function()local v57=0 -0 ;while true do if (0==v57) then v36.Players.LocalPlayer.Character.Humanoid.WalkSpeed=16;v36.Players.LocalPlayer.Character.Humanoid.JumpPower=782 -(16 + 716) ;break;end end end);v27=3;end if (v27==0) then v28=loadstring(v36:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))();v29=v28.CreateLib(v7("\87\19\232\95\81\51\41\242\74","\19\97\135\40\63"),v7("\19\162\83\60\63\27\57\171\81\54","\81\206\60\83\91\79"));v30=v29:NewTab(v7("\137\79\162\222","\196\46\203\176\18\79\163\45"));v27=1;end end end
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
+
+
+MainSection:NewToggle("Auto Stand Up", "Auto Stand Up", function(state)
+    if state then
+_G.AutoStand = true
+while _G.AutoStand == true do
+   local args = {
+    [1] = "R",
+    [2] = false
+}
+
+game:GetService("Players").LocalPlayer.PlayerGui.RTGui.codebase.ragdoll.Events.Toggle:FireServer(unpack(args))
+   wait(0.1)
+end
+    else
+        _G.AutoStand = false
+        while _G.AutoStand == true do
+           local args = {
+            [1] = "R",
+            [2] = false
+        }
+        
+        game:GetService("Players").LocalPlayer.PlayerGui.RTGui.codebase.ragdoll.Events.Toggle:FireServer(unpack(args))
+           wait(0.1)
+        end
+    end
+end)
+
+MainSection:NewToggle("Auto Escaped From Titan(Have Cooldown)", "Auto Escaped From Titan", function(state)
+    if state then
+    _G.AutoEscaped = true
+    while _G.AutoEscaped == true do
+    game:GetService("Players").LocalPlayer.PlayerGui.RTGui.codebase.avatar.dropplrev:FireServer()
+       wait()
+    end
+    else
+        _G.AutoEscaped = false
+        while _G.AutoEscaped == true do
+        game:GetService("Players").LocalPlayer.PlayerGui.RTGui.codebase.avatar.dropplrev:FireServer()
+           wait()
+        end
+    end
+end)
+
+MainSection:NewLabel("More Script Coming Soon")
+
+local Player = Window:NewTab("Player")
+local PlayerSection = Player:NewSection("Player")
+
+PlayerSection:NewSlider("WalkSpeed", "SPEED!!", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+PlayerSection:NewTextBox("WalkSpeed", "SPEED!!", function(txt)
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = txt
+end)
+
+PlayerSection:NewButton("Reset WalkSpeed", "reset walkspeed", function()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end)
+
+PlayerSection:NewToggle("Super Human", "Super Human", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 320
+    else
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 195
+    end
+end)
+
+PlayerSection:NewToggle("Infinite Jump", "Infinite Jump", function(state)
+    if state then
+     --Toggles the infinite jump between on or off on every script run
+_G.infinjump = not _G.infinjump
+
+if _G.infinJumpStarted == nil then
+	--Ensures this only runs once to save resources
+	_G.infinJumpStarted = true
+	
+	--The actual infinite jump
+	local plr = game:GetService('Players').LocalPlayer
+	local m = plr:GetMouse()
+	m.KeyDown:connect(function(k)
+		if _G.infinjump then
+			if k:byte() == 32 then
+			humanoid = game:GetService'Players'.LocalPlayer.Character:FindFirstChildOfClass('Humanoid')
+			humanoid:ChangeState('Jumping')
+			wait()
+			humanoid:ChangeState('Seated')
+			end
+		end
+	end)
+end
+    else
+              --Toggles the infinite jump between on or off on every script run
+_G.infinjump = not _G.infinjump
+
+if _G.infinJumpStarted == nil then
+	--Ensures this only runs once to save resources
+	_G.infinJumpStarted = false
+	
+	--The actual infinite jump
+	local plr = game:GetService('Players').LocalPlayer
+	local m = plr:GetMouse()
+	m.KeyDown:connect(function(k)
+		if _G.infinjump then
+			if k:byte() == 32 then
+			humanoid = game:GetService'Players'.LocalPlayer.Character:FindFirstChildOfClass('Humanoid')
+			humanoid:ChangeState('Jumping')
+			wait()
+			humanoid:ChangeState('Seated')
+			end
+		end
+	end)
+end
+    end
+end)
+
+PlayerSection:NewLabel("JumpPower Has Patched")
+
+local info = Window:NewTab("Information")
+local infoSection = info:NewSection("Information")
+
+infoSection:NewLabel("This Script Is Beta")
+
+local game = Window:NewTab("Game Support")
+local gameSection = game:NewSection("List Game Support")
+
+gameSection:NewLabel("Ragdoll Testing")
+gameSection:NewLabel("Tower FL")
+
+local Setting = Window:NewTab("Setting")
+local SettingSection = Setting:NewSection("Settings")
+
+SettingSection:NewKeybind("Keybind", "Keybind", Enum.KeyCode.F, function()
+	Library:ToggleUI(F)
+end)
+
+local prob = Window:NewTab("Report")
+local probSection = prob:NewSection("Report")
+
+probSection:NewLabel("Have A Problem?Contact biiib#7690 In Discord")
+end
+
+if game.PlaceId == 5496455308 then
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Drown Hub", "BloodTheme")
+
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
+
+MainSection:NewSlider("WalkSpeed", "SPEED!!", 500, 16, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = s
+end)
+
+MainSection:NewSlider("JumpPower", "JUMP HIGH!!", 500, 50, function(s) -- 500 (MaxValue) | 0 (MinValue)
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = s
+end)
+
+MainSection:NewTextBox("WalkSpeed", "SPEED!!", function(txt)
+	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = txt
+end)
+
+MainSection:NewTextBox("JumpPower", "JUMP HIGH!!", function(txt)
+	game.Players.LocalPlayer.Character.Humanoid.JumpPower = txt
+end)
+
+MainSection:NewButton("Reset WalkSpeed and JumpPower", "reset walkspeed and jumppower", function()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 16
+    game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
+end)
+
+MainSection:NewToggle("Infinite Jump", "Infinite Jump", function(state)
+    if state then
+     --Toggles the infinite jump between on or off on every script run
+_G.infinjump = not _G.infinjump
+
+if _G.infinJumpStarted == nil then
+	--Ensures this only runs once to save resources
+	_G.infinJumpStarted = true
+	
+	--The actual infinite jump
+	local plr = game:GetService('Players').LocalPlayer
+	local m = plr:GetMouse()
+	m.KeyDown:connect(function(k)
+		if _G.infinjump then
+			if k:byte() == 32 then
+			humanoid = game:GetService'Players'.LocalPlayer.Character:FindFirstChildOfClass('Humanoid')
+			humanoid:ChangeState('Jumping')
+			wait()
+			humanoid:ChangeState('Seated')
+			end
+		end
+	end)
+end
+    else
+              --Toggles the infinite jump between on or off on every script run
+_G.infinjump = not _G.infinjump
+
+if _G.infinJumpStarted == nil then
+	--Ensures this only runs once to save resources
+	_G.infinJumpStarted = false
+	
+	--The actual infinite jump
+	local plr = game:GetService('Players').LocalPlayer
+	local m = plr:GetMouse()
+	m.KeyDown:connect(function(k)
+		if _G.infinjump then
+			if k:byte() == 32 then
+			humanoid = game:GetService'Players'.LocalPlayer.Character:FindFirstChildOfClass('Humanoid')
+			humanoid:ChangeState('Jumping')
+			wait()
+			humanoid:ChangeState('Seated')
+			end
+		end
+	end)
+end
+    end
+end)
+
+
+local Other = Window:NewTab("Other")
+local OtherSection = Other:NewSection("Others")
+
+OtherSection:NewButton("Infinite Yield(Easy Win)", "Infinite Yield", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+local info = Window:NewTab("Information")
+local infoSection = info:NewSection("Information")
+
+infoSection:NewLabel("This Script Is Beta")
+
+local game = Window:NewTab("Game Support")
+local gameSection = game:NewSection("List Game Support")
+
+gameSection:NewLabel("Ragdoll Testing")
+gameSection:NewLabel("Tower FL")
+
+local Setting = Window:NewTab("Setting")
+local SettingSection = Setting:NewSection("Settings")
+
+SettingSection:NewKeybind("Keybind", "Keybind", Enum.KeyCode.F, function()
+	Library:ToggleUI(F)
+end)
+
+local prob = Window:NewTab("Report")
+local probSection = prob:NewSection("Report")
+
+probSection:NewLabel("Have A Problem?Contact biiib#7690 In Discord")
+end
