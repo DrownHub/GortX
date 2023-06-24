@@ -62,15 +62,27 @@ PlayerSection:NewTextBox("WalkSpeed", "SPEED!!", function(txt)
 	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = txt
 end)
 
-PlayerSection:NewButton("Reset WalkSpeed", "reset walkspeed", function()
+PlayerSection:NewButton("Reset WalkSpeed For Titan", "reset walkspeed for titan", function()
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 195
 end)
 
-PlayerSection:NewToggle("Super Human", "Super Human", function(state)
+PlayerSection:NewButton("Reset WalkSpeed For Mini Titan", "reset walkspeed for mini titan", function()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 55
+end)
+
+PlayerSection:NewToggle("Super Human For Titan", "Super Human For Titan", function(state)
     if state then
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 320
     else
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 195
+    end
+end)
+
+PlayerSection:NewToggle("Super Human For Mini Titan", "Super Human For Mini Titan", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 80
+    else
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 55
     end
 end)
 
