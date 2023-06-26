@@ -62,15 +62,19 @@ PlayerSection:NewTextBox("WalkSpeed", "SPEED!!", function(txt)
 	game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = txt
 end)
 
-PlayerSection:NewButton("Reset WalkSpeed For Titan", "reset walkspeed for titan", function()
+PlayerSection:NewButton("Reset WalkSpeed For Size 12.5", "reset walkspeed for size 12.5", function()
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 195
 end)
 
-PlayerSection:NewButton("Reset WalkSpeed For Mini Titan", "reset walkspeed for mini titan", function()
+PlayerSection:NewButton("Reset WalkSpeed For Size 2.5", "reset walkspeed for size 2.5", function()
     game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 55
 end)
 
-PlayerSection:NewToggle("Super Human For Titan", "Super Human For Titan", function(state)
+PlayerSection:NewButton("Reset WalkSpeed For Size 1.0", "reset walkspeed for size 1.0", function()
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 25
+end)
+
+PlayerSection:NewToggle("Super Human Size 12.5", "Super Human For Size 12.5", function(state)
     if state then
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 320
     else
@@ -78,11 +82,19 @@ PlayerSection:NewToggle("Super Human For Titan", "Super Human For Titan", functi
     end
 end)
 
-PlayerSection:NewToggle("Super Human For Mini Titan", "Super Human For Mini Titan", function(state)
+PlayerSection:NewToggle("Super Human For Size 2.5", "Super Human For Size 2.5", function(state)
     if state then
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 80
     else
         game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 55
+    end
+end)
+
+PlayerSection:NewToggle("Super Human For Size 1.0", "Super Human For Size 1.0", function(state)
+    if state then
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 55
+    else
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 25
     end
 end)
 
@@ -133,6 +145,31 @@ if _G.infinJumpStarted == nil then
 end
     end
 end)
+
+PlayerSection:NewKeybind("Infinite Jump Keybind", "Infinite Jump Keybind", Enum.KeyCode.T, function()
+	     --Toggles the infinite jump between on or off on every script run
+_G.infinjump = not _G.infinjump
+
+if _G.infinJumpStarted == nil then
+	--Ensures this only runs once to save resources
+	_G.infinJumpStarted = true
+	
+	--The actual infinite jump
+	local plr = game:GetService('Players').LocalPlayer
+	local m = plr:GetMouse()
+	m.KeyDown:connect(function(k)
+		if _G.infinjump then
+			if k:byte() == 32 then
+			humanoid = game:GetService'Players'.LocalPlayer.Character:FindFirstChildOfClass('Humanoid')
+			humanoid:ChangeState('Jumping')
+			wait()
+			humanoid:ChangeState('Seated')
+			end
+		end
+	end)
+end
+end)
+
 
 PlayerSection:NewLabel("JumpPower Has Patched")
 
@@ -236,6 +273,29 @@ end
     end
 end)
 
+MainSection:NewKeybind("Infinite Jump Keybind", "Infinite Jump Keybind", Enum.KeyCode.T, function()
+	     --Toggles the infinite jump between on or off on every script run
+_G.infinjump = not _G.infinjump
+
+if _G.infinJumpStarted == nil then
+	--Ensures this only runs once to save resources
+	_G.infinJumpStarted = true
+	
+	--The actual infinite jump
+	local plr = game:GetService('Players').LocalPlayer
+	local m = plr:GetMouse()
+	m.KeyDown:connect(function(k)
+		if _G.infinjump then
+			if k:byte() == 32 then
+			humanoid = game:GetService'Players'.LocalPlayer.Character:FindFirstChildOfClass('Humanoid')
+			humanoid:ChangeState('Jumping')
+			wait()
+			humanoid:ChangeState('Seated')
+			end
+		end
+	end)
+end
+end)
 
 local Other = Window:NewTab("Other")
 local OtherSection = Other:NewSection("Others")
