@@ -226,7 +226,7 @@ MainSection:NewButton("Reset WalkSpeed and JumpPower", "reset walkspeed and jump
 end)
 
 MainSection:NewButton("Tp To Finish(Recomended Use In Private Server)", "Tp To Finish", function()
-    glocal teleport_table = {
+    local teleport_table = {
     location1 = Vector3.new(41.4248657, 330.473877, 100.008377, 0.382687271, -0, -0.923877954, 0, 1, -0, 0.923877954, 0, 0.382687271),
 }
 
