@@ -225,6 +225,30 @@ MainSection:NewButton("Reset WalkSpeed and JumpPower", "reset walkspeed and jump
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
 end)
 
+MainSection:NewButton("Tp To Finish(Recomended Use In Private Server)", "Tp To Finish", function()
+    glocal teleport_table = {
+    location1 = Vector3.new(41.4248657, 330.473877, 100.008377, 0.382687271, -0, -0.923877954, 0, 1, -0, 0.923877954, 0, 0.382687271),
+}
+
+local tween_s = game:GetService('TweenService')
+local tweeninfo = TweenInfo.new(1,Enum.EasingStyle.Linear)
+
+local lp = game.Players.LocalPlayer
+
+function bypass_teleport(v)
+    if lp.Character and 
+    lp.Character:FindFirstChild('HumanoidRootPart') then
+        local cf = CFrame.new(v)
+        local a = tween_s:Create(lp.Character.HumanoidRootPart,tweeninfo,{CFrame=cf})
+        a:Play()
+        a.Completed:Wait()
+        print('Teleporting Done!')
+    end
+end
+
+bypass_teleport(teleport_table.location1)
+end)
+
 MainSection:NewToggle("Infinite Jump", "Infinite Jump", function(state)
     if state then
      --Toggles the infinite jump between on or off on every script run
