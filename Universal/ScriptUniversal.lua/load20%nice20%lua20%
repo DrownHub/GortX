@@ -225,7 +225,7 @@ MainSection:NewButton("Reset WalkSpeed and JumpPower", "reset walkspeed and jump
     game.Players.LocalPlayer.Character.Humanoid.JumpPower = 50
 end)
 
-MainSection:NewButton("Tp To Finish(Recomended Use In Private Server)", "Tp To Finish", function()
+MainSection:NewButton("Tp To Finish(Recomended For Private Server)", "Tp To Finish(Recomended For Private Server)", function()
     local teleport_table = {
     location1 = Vector3.new(41.4248657, 330.473877, 100.008377, 0.382687271, -0, -0.923877954, 0, 1, -0, 0.923877954, 0, 0.382687271),
 }
